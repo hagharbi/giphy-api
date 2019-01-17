@@ -1,10 +1,20 @@
+body {
+    background-color: rgb(57, 70, 105, 0.74);
+}
+
 #jumbotron-image {
     background-image: url('https://aikiou.com/wp-content/uploads/2016/02/Aikiou-dog-background-dog-1200x300.jpg');
-    background-size: 1295px 300px;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 150px rgba(57, 70, 105, 0.74)
+
 
 }
 
 .holder {
     float: left;
     width: 200px;
+}
+
+h1 {
+    font-family: 'Fredoka One';
 }
