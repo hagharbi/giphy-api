@@ -1,7 +1,7 @@
 
 $(document).ready(function() { 
 
-var topics = ["Earth", "Venus", "Mars", "Jupiter", "Saturn", "Mercury", "Uranus", "Neptune"];
+var topics = ["Chihuahua", "German Shepard", "Bulldog", "Doberman", "Husky"];
 
     function displayStaticGif() {
 
@@ -18,11 +18,12 @@ var topics = ["Earth", "Venus", "Mars", "Jupiter", "Saturn", "Mercury", "Uranus"
             for(var i = 0; i < response.data.length; i++) {
                 
                 var displayDiv = $("<div>");
+                displayDiv.addClass("holder");
 
                 var image = $("<img>");
-                image.attr("src", response.data[i].images.original_still.url);
-                image.attr("data-still", response.data[i].images.original_still.url);
-                image.attr("data-animate", response.data[i].images.original.url);
+                image.attr("src", response.data[i].images.fixed_height_still.url);
+                image.attr("data-still", response.data[i].images.fixed_height_still.url);
+                image.attr("data-animate", response.data[i].images.fixed_height.url);
                 image.attr("data-state", "still");
                 image.attr("class", "gif");
                 displayDiv.append(image);
