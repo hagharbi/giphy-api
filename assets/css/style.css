@@ -12,7 +12,13 @@ body {
 
 .holder {
     float: left;
+}
+
+.gif {
     width: 200px;
+    height: 200px;
+    margin-right: 10px;
+
 }
 
 h1 {
